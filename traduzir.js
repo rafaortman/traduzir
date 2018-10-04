@@ -22,5 +22,10 @@ $(document).ready(function(){
         $('html').attr('lang','en');
         console.log('en')
     }
-
+    
+    if (url.indexOf('?en') >= 0){
+        idiomaEn();
+    } else {
+        idiomaPt();
+    }
 });
